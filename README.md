@@ -1,3 +1,16 @@
+# Projekt RISA_2: dwa drony w tubie (RL)
+
+> Ten fork zawiera projekt **zdecentralizowanego wymijania dwóch dronów w wąskiej tubie** (PPO).
+> Pełna dokumentacja, wyniki i instrukcja uruchomienia: **[tube_project/README.md](tube_project/README.md)**.
+>
+> Szybki start:
+> ```sh
+> uv venv --python 3.12 && source .venv/bin/activate && uv pip install -e . tensorboard
+> python gym_pybullet_drones/examples/play_tube.py --model tube_project/models/FINAL_model.zip --radius 0.15
+> ```
+
+---
+
 > [!TIP]
 > For research work with **symbolic dynamics and constraints**, also try [`safe-control-gym`](https://github.com/learnsyslab/safe-control-gym)
 >

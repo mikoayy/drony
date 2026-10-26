@@ -1,0 +1,3598 @@
+pybullet build time: Oct 21 2026 15:54:55
+pybullet build time: Oct 21 2026 15:54:55
+pybullet build time: Oct 21 2026 15:54:55
+pybullet build time: Oct 21 2026 15:54:55
+pybullet build time: Oct 21 2026 15:54:55
+pybullet build time: Oct 21 2026 15:54:55
+pybullet build time: Oct 21 2026 15:54:55
+pybullet build time: Oct 21 2026 15:54:55
+pybullet build time: Oct 21 2026 15:54:55
+[INFO] BaseAviary.__init__() loaded parameters from the drone's .urdf:
+[INFO] m 0.027000, L 0.039700,
+[INFO] ixx 0.000014, iyy 0.000014, izz 0.000022,
+[INFO] kf 3.160000e-10, km 7.940000e-12,
+[INFO] t2w 2.250000, max_speed_kmh 30.000000,
+[INFO] gnd_eff_coeff 11.368590, prop_radius 0.023135,
+[INFO] drag_xy_coeff 0.000001, drag_z_coeff 0.000001,
+[INFO] dw_coeff_1 2267.180000, dw_coeff_2 0.160000, dw_coeff_3 -0.110000
+[INFO] agentów: 16
+[INFO] action space (1 dron): Box(-1.0, 1.0, (4,), float32)
+[INFO] observation space (1 dron): Box(-inf, inf, (25,), float32)
+Using cpu device
+Logging to results/tube-20261022-162315_1
+[CURRICULUM] poziom 0: promień tuby 0.29-0.35 m
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 333      |
+|    ep_rew_mean     | -40.1    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 1420     |
+|    iterations      | 1        |
+|    time_elapsed    | 11       |
+|    total_timesteps | 16384    |
+---------------------------------
+Eval num_timesteps=20000, episode_reward=-46.40 +/- 1.88
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -46.4        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 20000        |
+| train/                  |              |
+|    approx_kl            | 0.0065148016 |
+|    clip_fraction        | 0.0688       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.69        |
+|    explained_variance   | -0.0496      |
+|    learning_rate        | 0.0003       |
+|    loss                 | 2.39         |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.00492     |
+|    std                  | 1            |
+|    value_loss           | 5.97         |
+------------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 345      |
+|    ep_rew_mean     | -38      |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 1066     |
+|    iterations      | 2        |
+|    time_elapsed    | 30       |
+|    total_timesteps | 32768    |
+---------------------------------
+Eval num_timesteps=40000, episode_reward=-44.80 +/- 0.88
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -44.8       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 40000       |
+| train/                  |             |
+|    approx_kl            | 0.006613131 |
+|    clip_fraction        | 0.059       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.7        |
+|    explained_variance   | 0.171       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 2.83        |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.00444    |
+|    std                  | 1.01        |
+|    value_loss           | 5.9         |
+-----------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 349      |
+|    ep_rew_mean     | -38      |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 1017     |
+|    iterations      | 3        |
+|    time_elapsed    | 48       |
+|    total_timesteps | 49152    |
+---------------------------------
+Eval num_timesteps=60000, episode_reward=-44.48 +/- 1.03
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -44.5       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 60000       |
+| train/                  |             |
+|    approx_kl            | 0.006091238 |
+|    clip_fraction        | 0.0531      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.71       |
+|    explained_variance   | 0.38        |
+|    learning_rate        | 0.0003      |
+|    loss                 | 2.67        |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.00404    |
+|    std                  | 1.01        |
+|    value_loss           | 5.61        |
+-----------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 306      |
+|    ep_rew_mean     | -33      |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 988      |
+|    iterations      | 4        |
+|    time_elapsed    | 66       |
+|    total_timesteps | 65536    |
+---------------------------------
+Eval num_timesteps=80000, episode_reward=-45.03 +/- 2.11
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -45         |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 80000       |
+| train/                  |             |
+|    approx_kl            | 0.005810998 |
+|    clip_fraction        | 0.0473      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.72       |
+|    explained_variance   | 0.398       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 2.52        |
+|    n_updates            | 40          |
+|    policy_gradient_loss | -0.00395    |
+|    std                  | 1.01        |
+|    value_loss           | 5.43        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 303      |
+|    ep_rew_mean     | -26.7    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 970      |
+|    iterations      | 5        |
+|    time_elapsed    | 84       |
+|    total_timesteps | 81920    |
+---------------------------------
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 291         |
+|    ep_rew_mean          | -23.7       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    fps                  | 1006        |
+|    iterations           | 6           |
+|    time_elapsed         | 97          |
+|    total_timesteps      | 98304       |
+| train/                  |             |
+|    approx_kl            | 0.006140025 |
+|    clip_fraction        | 0.0523      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.72       |
+|    explained_variance   | 0.482       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 2.67        |
+|    n_updates            | 50          |
+|    policy_gradient_loss | -0.00444    |
+|    std                  | 1.01        |
+|    value_loss           | 5           |
+-----------------------------------------
+Eval num_timesteps=100000, episode_reward=-44.11 +/- 1.23
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -44.1       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 100000      |
+| train/                  |             |
+|    approx_kl            | 0.005540373 |
+|    clip_fraction        | 0.0559      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.71       |
+|    explained_variance   | 0.504       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 2.31        |
+|    n_updates            | 60          |
+|    policy_gradient_loss | -0.00338    |
+|    std                  | 1.01        |
+|    value_loss           | 4.71        |
+-----------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 287      |
+|    ep_rew_mean     | -17.9    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 996      |
+|    iterations      | 7        |
+|    time_elapsed    | 115      |
+|    total_timesteps | 114688   |
+---------------------------------
+Eval num_timesteps=120000, episode_reward=-44.48 +/- 0.99
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -44.5        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 120000       |
+| train/                  |              |
+|    approx_kl            | 0.0068350798 |
+|    clip_fraction        | 0.0597       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.71        |
+|    explained_variance   | 0.546        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.87         |
+|    n_updates            | 70           |
+|    policy_gradient_loss | -0.00358     |
+|    std                  | 1.01         |
+|    value_loss           | 4.37         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 261      |
+|    ep_rew_mean     | -14.6    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 975      |
+|    iterations      | 8        |
+|    time_elapsed    | 134      |
+|    total_timesteps | 131072   |
+---------------------------------
+Eval num_timesteps=140000, episode_reward=-40.23 +/- 1.31
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -40.2       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 140000      |
+| train/                  |             |
+|    approx_kl            | 0.006493517 |
+|    clip_fraction        | 0.0605      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.71       |
+|    explained_variance   | 0.574       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.8         |
+|    n_updates            | 80          |
+|    policy_gradient_loss | -0.00377    |
+|    std                  | 1.01        |
+|    value_loss           | 4.04        |
+-----------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 254      |
+|    ep_rew_mean     | -14.3    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 960      |
+|    iterations      | 9        |
+|    time_elapsed    | 153      |
+|    total_timesteps | 147456   |
+---------------------------------
+Eval num_timesteps=160000, episode_reward=-34.29 +/- 1.78
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+----------------------------------------
+| curriculum/             |            |
+|    level                | 0          |
+| eval/                   |            |
+|    mean_ep_length       | 450        |
+|    mean_reward          | -34.3      |
+|    success_rate         | 0          |
+| time/                   |            |
+|    total_timesteps      | 160000     |
+| train/                  |            |
+|    approx_kl            | 0.00688893 |
+|    clip_fraction        | 0.0736     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -5.71      |
+|    explained_variance   | 0.63       |
+|    learning_rate        | 0.0003     |
+|    loss                 | 1.65       |
+|    n_updates            | 90         |
+|    policy_gradient_loss | -0.00435   |
+|    std                  | 1.01       |
+|    value_loss           | 3.48       |
+----------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 249      |
+|    ep_rew_mean     | -12.7    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 950      |
+|    iterations      | 10       |
+|    time_elapsed    | 172      |
+|    total_timesteps | 163840   |
+---------------------------------
+Eval num_timesteps=180000, episode_reward=-30.79 +/- 9.50
+Episode length: 429.60 +/- 40.80
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 430         |
+|    mean_reward          | -30.8       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 180000      |
+| train/                  |             |
+|    approx_kl            | 0.005756816 |
+|    clip_fraction        | 0.0572      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.7        |
+|    explained_variance   | 0.636       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 2.18        |
+|    n_updates            | 100         |
+|    policy_gradient_loss | -0.00464    |
+|    std                  | 1.01        |
+|    value_loss           | 4.26        |
+-----------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 238      |
+|    ep_rew_mean     | -11.5    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 946      |
+|    iterations      | 11       |
+|    time_elapsed    | 190      |
+|    total_timesteps | 180224   |
+---------------------------------
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| rollout/                |              |
+|    ep_len_mean          | 238          |
+|    ep_rew_mean          | -11.2        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    fps                  | 963          |
+|    iterations           | 12           |
+|    time_elapsed         | 204          |
+|    total_timesteps      | 196608       |
+| train/                  |              |
+|    approx_kl            | 0.0066523543 |
+|    clip_fraction        | 0.0668       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.69        |
+|    explained_variance   | 0.681        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.57         |
+|    n_updates            | 110          |
+|    policy_gradient_loss | -0.00532     |
+|    std                  | 1            |
+|    value_loss           | 3.43         |
+------------------------------------------
+Eval num_timesteps=200000, episode_reward=-36.18 +/- 1.81
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -36.2       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 200000      |
+| train/                  |             |
+|    approx_kl            | 0.005021737 |
+|    clip_fraction        | 0.0434      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.68       |
+|    explained_variance   | 0.703       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.85        |
+|    n_updates            | 120         |
+|    policy_gradient_loss | -0.00365    |
+|    std                  | 1           |
+|    value_loss           | 3.81        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 246      |
+|    ep_rew_mean     | -12.4    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 958      |
+|    iterations      | 13       |
+|    time_elapsed    | 222      |
+|    total_timesteps | 212992   |
+---------------------------------
+Eval num_timesteps=220000, episode_reward=-37.12 +/- 1.37
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -37.1        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 220000       |
+| train/                  |              |
+|    approx_kl            | 0.0054014605 |
+|    clip_fraction        | 0.0584       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.69        |
+|    explained_variance   | 0.717        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.87         |
+|    n_updates            | 130          |
+|    policy_gradient_loss | -0.00429     |
+|    std                  | 1.01         |
+|    value_loss           | 3.79         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 282      |
+|    ep_rew_mean     | -14.5    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 957      |
+|    iterations      | 14       |
+|    time_elapsed    | 239      |
+|    total_timesteps | 229376   |
+---------------------------------
+Eval num_timesteps=240000, episode_reward=-35.46 +/- 1.07
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -35.5        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 240000       |
+| train/                  |              |
+|    approx_kl            | 0.0064573083 |
+|    clip_fraction        | 0.0546       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.7         |
+|    explained_variance   | 0.735        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.81         |
+|    n_updates            | 140          |
+|    policy_gradient_loss | -0.0043      |
+|    std                  | 1.01         |
+|    value_loss           | 3.44         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 264      |
+|    ep_rew_mean     | -13.1    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 949      |
+|    iterations      | 15       |
+|    time_elapsed    | 258      |
+|    total_timesteps | 245760   |
+---------------------------------
+Eval num_timesteps=260000, episode_reward=-34.83 +/- 0.94
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -34.8       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 260000      |
+| train/                  |             |
+|    approx_kl            | 0.007320237 |
+|    clip_fraction        | 0.0686      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.71       |
+|    explained_variance   | 0.681       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.72        |
+|    n_updates            | 150         |
+|    policy_gradient_loss | -0.00379    |
+|    std                  | 1.01        |
+|    value_loss           | 3.93        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 256      |
+|    ep_rew_mean     | -11.6    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 947      |
+|    iterations      | 16       |
+|    time_elapsed    | 276      |
+|    total_timesteps | 262144   |
+---------------------------------
+----------------------------------------
+| curriculum/             |            |
+|    level                | 0          |
+| rollout/                |            |
+|    ep_len_mean          | 290        |
+|    ep_rew_mean          | -14.8      |
+|    success_rate         | 0          |
+| time/                   |            |
+|    fps                  | 960        |
+|    iterations           | 17         |
+|    time_elapsed         | 289        |
+|    total_timesteps      | 278528     |
+| train/                  |            |
+|    approx_kl            | 0.00655261 |
+|    clip_fraction        | 0.0622     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -5.7       |
+|    explained_variance   | 0.733      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 1.78       |
+|    n_updates            | 160        |
+|    policy_gradient_loss | -0.00468   |
+|    std                  | 1.01       |
+|    value_loss           | 3.37       |
+----------------------------------------
+Eval num_timesteps=280000, episode_reward=-33.80 +/- 1.23
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -33.8       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 280000      |
+| train/                  |             |
+|    approx_kl            | 0.007991713 |
+|    clip_fraction        | 0.0827      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.68       |
+|    explained_variance   | 0.736       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.61        |
+|    n_updates            | 170         |
+|    policy_gradient_loss | -0.0047     |
+|    std                  | 0.998       |
+|    value_loss           | 3.5         |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 268      |
+|    ep_rew_mean     | -14      |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 956      |
+|    iterations      | 18       |
+|    time_elapsed    | 308      |
+|    total_timesteps | 294912   |
+---------------------------------
+Eval num_timesteps=300000, episode_reward=-33.28 +/- 1.46
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -33.3        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 300000       |
+| train/                  |              |
+|    approx_kl            | 0.0068541886 |
+|    clip_fraction        | 0.0721       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.67        |
+|    explained_variance   | 0.736        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.6          |
+|    n_updates            | 180          |
+|    policy_gradient_loss | -0.00482     |
+|    std                  | 1            |
+|    value_loss           | 3.51         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 273      |
+|    ep_rew_mean     | -13.2    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 952      |
+|    iterations      | 19       |
+|    time_elapsed    | 326      |
+|    total_timesteps | 311296   |
+---------------------------------
+Eval num_timesteps=320000, episode_reward=-33.97 +/- 1.48
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -34         |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 320000      |
+| train/                  |             |
+|    approx_kl            | 0.007023151 |
+|    clip_fraction        | 0.0644      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.68       |
+|    explained_variance   | 0.715       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.63        |
+|    n_updates            | 190         |
+|    policy_gradient_loss | -0.00396    |
+|    std                  | 1           |
+|    value_loss           | 3.8         |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 306      |
+|    ep_rew_mean     | -16.2    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 949      |
+|    iterations      | 20       |
+|    time_elapsed    | 345      |
+|    total_timesteps | 327680   |
+---------------------------------
+Eval num_timesteps=340000, episode_reward=-32.99 +/- 1.12
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -33         |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 340000      |
+| train/                  |             |
+|    approx_kl            | 0.006722659 |
+|    clip_fraction        | 0.0745      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.68       |
+|    explained_variance   | 0.808       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.32        |
+|    n_updates            | 200         |
+|    policy_gradient_loss | -0.00479    |
+|    std                  | 1           |
+|    value_loss           | 2.46        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 311      |
+|    ep_rew_mean     | -15.8    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 947      |
+|    iterations      | 21       |
+|    time_elapsed    | 363      |
+|    total_timesteps | 344064   |
+---------------------------------
+Eval num_timesteps=360000, episode_reward=-33.61 +/- 1.48
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -33.6       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 360000      |
+| train/                  |             |
+|    approx_kl            | 0.008110398 |
+|    clip_fraction        | 0.0852      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.68       |
+|    explained_variance   | 0.761       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.49        |
+|    n_updates            | 210         |
+|    policy_gradient_loss | -0.00533    |
+|    std                  | 1           |
+|    value_loss           | 3.64        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 279      |
+|    ep_rew_mean     | -11.1    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 946      |
+|    iterations      | 22       |
+|    time_elapsed    | 380      |
+|    total_timesteps | 360448   |
+---------------------------------
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 305         |
+|    ep_rew_mean          | -12.1       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    fps                  | 955         |
+|    iterations           | 23          |
+|    time_elapsed         | 394         |
+|    total_timesteps      | 376832      |
+| train/                  |             |
+|    approx_kl            | 0.008619556 |
+|    clip_fraction        | 0.0748      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.68       |
+|    explained_variance   | 0.773       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.51        |
+|    n_updates            | 220         |
+|    policy_gradient_loss | -0.00542    |
+|    std                  | 1           |
+|    value_loss           | 3.27        |
+-----------------------------------------
+Eval num_timesteps=380000, episode_reward=-29.52 +/- 4.37
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -29.5       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 380000      |
+| train/                  |             |
+|    approx_kl            | 0.005926599 |
+|    clip_fraction        | 0.0493      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.7        |
+|    explained_variance   | 0.801       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.52        |
+|    n_updates            | 230         |
+|    policy_gradient_loss | -0.00253    |
+|    std                  | 1.01        |
+|    value_loss           | 3.25        |
+-----------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 297      |
+|    ep_rew_mean     | -11.2    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 954      |
+|    iterations      | 24       |
+|    time_elapsed    | 411      |
+|    total_timesteps | 393216   |
+---------------------------------
+Eval num_timesteps=400000, episode_reward=-28.15 +/- 5.04
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -28.1       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 400000      |
+| train/                  |             |
+|    approx_kl            | 0.007202044 |
+|    clip_fraction        | 0.0776      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.7        |
+|    explained_variance   | 0.775       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.31        |
+|    n_updates            | 240         |
+|    policy_gradient_loss | -0.00415    |
+|    std                  | 1.01        |
+|    value_loss           | 3.16        |
+-----------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 306      |
+|    ep_rew_mean     | -12      |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 952      |
+|    iterations      | 25       |
+|    time_elapsed    | 429      |
+|    total_timesteps | 409600   |
+---------------------------------
+Eval num_timesteps=420000, episode_reward=-30.60 +/- 2.92
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -30.6        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 420000       |
+| train/                  |              |
+|    approx_kl            | 0.0065182503 |
+|    clip_fraction        | 0.0651       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.69        |
+|    explained_variance   | 0.826        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.07         |
+|    n_updates            | 250          |
+|    policy_gradient_loss | -0.00413     |
+|    std                  | 1            |
+|    value_loss           | 2.46         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 312      |
+|    ep_rew_mean     | -12.1    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 948      |
+|    iterations      | 26       |
+|    time_elapsed    | 448      |
+|    total_timesteps | 425984   |
+---------------------------------
+Eval num_timesteps=440000, episode_reward=-30.47 +/- 5.13
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -30.5       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 440000      |
+| train/                  |             |
+|    approx_kl            | 0.007276643 |
+|    clip_fraction        | 0.0802      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.68       |
+|    explained_variance   | 0.82        |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.46        |
+|    n_updates            | 260         |
+|    policy_gradient_loss | -0.00556    |
+|    std                  | 0.999       |
+|    value_loss           | 3.05        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 285      |
+|    ep_rew_mean     | -9.36    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 946      |
+|    iterations      | 27       |
+|    time_elapsed    | 467      |
+|    total_timesteps | 442368   |
+---------------------------------
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 303         |
+|    ep_rew_mean          | -9.29       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    fps                  | 956         |
+|    iterations           | 28          |
+|    time_elapsed         | 479         |
+|    total_timesteps      | 458752      |
+| train/                  |             |
+|    approx_kl            | 0.007446699 |
+|    clip_fraction        | 0.0849      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.67       |
+|    explained_variance   | 0.795       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.2         |
+|    n_updates            | 270         |
+|    policy_gradient_loss | -0.00499    |
+|    std                  | 1           |
+|    value_loss           | 3.39        |
+-----------------------------------------
+Eval num_timesteps=460000, episode_reward=-25.73 +/- 2.39
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -25.7       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 460000      |
+| train/                  |             |
+|    approx_kl            | 0.009115155 |
+|    clip_fraction        | 0.0919      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.66       |
+|    explained_variance   | 0.845       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.28        |
+|    n_updates            | 280         |
+|    policy_gradient_loss | -0.00497    |
+|    std                  | 0.995       |
+|    value_loss           | 2.59        |
+-----------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 300      |
+|    ep_rew_mean     | -7.64    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 954      |
+|    iterations      | 29       |
+|    time_elapsed    | 497      |
+|    total_timesteps | 475136   |
+---------------------------------
+Eval num_timesteps=480000, episode_reward=-24.72 +/- 1.04
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+----------------------------------------
+| curriculum/             |            |
+|    level                | 0          |
+| eval/                   |            |
+|    mean_ep_length       | 450        |
+|    mean_reward          | -24.7      |
+|    success_rate         | 0          |
+| time/                   |            |
+|    total_timesteps      | 480000     |
+| train/                  |            |
+|    approx_kl            | 0.00798028 |
+|    clip_fraction        | 0.0834     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -5.65      |
+|    explained_variance   | 0.812      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 1.51       |
+|    n_updates            | 290        |
+|    policy_gradient_loss | -0.00565   |
+|    std                  | 0.994      |
+|    value_loss           | 3.26       |
+----------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 269      |
+|    ep_rew_mean     | -5.94    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 951      |
+|    iterations      | 30       |
+|    time_elapsed    | 516      |
+|    total_timesteps | 491520   |
+---------------------------------
+Eval num_timesteps=500000, episode_reward=-26.44 +/- 0.83
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -26.4        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 500000       |
+| train/                  |              |
+|    approx_kl            | 0.0059571313 |
+|    clip_fraction        | 0.0817       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.65        |
+|    explained_variance   | 0.783        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 2.03         |
+|    n_updates            | 300          |
+|    policy_gradient_loss | -0.00447     |
+|    std                  | 0.994        |
+|    value_loss           | 3.85         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 294      |
+|    ep_rew_mean     | -9.83    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 950      |
+|    iterations      | 31       |
+|    time_elapsed    | 534      |
+|    total_timesteps | 507904   |
+---------------------------------
+Eval num_timesteps=520000, episode_reward=-27.31 +/- 2.85
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -27.3        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 520000       |
+| train/                  |              |
+|    approx_kl            | 0.0063356264 |
+|    clip_fraction        | 0.065        |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.64        |
+|    explained_variance   | 0.915        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.742        |
+|    n_updates            | 310          |
+|    policy_gradient_loss | -0.0046      |
+|    std                  | 0.989        |
+|    value_loss           | 1.73         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 333      |
+|    ep_rew_mean     | -12      |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 949      |
+|    iterations      | 32       |
+|    time_elapsed    | 552      |
+|    total_timesteps | 524288   |
+---------------------------------
+Eval num_timesteps=540000, episode_reward=-25.43 +/- 1.64
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -25.4       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 540000      |
+| train/                  |             |
+|    approx_kl            | 0.007171735 |
+|    clip_fraction        | 0.0706      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.62       |
+|    explained_variance   | 0.85        |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.41        |
+|    n_updates            | 320         |
+|    policy_gradient_loss | -0.00435    |
+|    std                  | 0.986       |
+|    value_loss           | 3.1         |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 307      |
+|    ep_rew_mean     | -9.46    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 948      |
+|    iterations      | 33       |
+|    time_elapsed    | 570      |
+|    total_timesteps | 540672   |
+---------------------------------
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 287         |
+|    ep_rew_mean          | -9.06       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    fps                  | 954         |
+|    iterations           | 34          |
+|    time_elapsed         | 583         |
+|    total_timesteps      | 557056      |
+| train/                  |             |
+|    approx_kl            | 0.008345797 |
+|    clip_fraction        | 0.0994      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.61       |
+|    explained_variance   | 0.891       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.28        |
+|    n_updates            | 330         |
+|    policy_gradient_loss | -0.00549    |
+|    std                  | 0.984       |
+|    value_loss           | 2.44        |
+-----------------------------------------
+Eval num_timesteps=560000, episode_reward=-25.66 +/- 0.32
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -25.7       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 560000      |
+| train/                  |             |
+|    approx_kl            | 0.007525012 |
+|    clip_fraction        | 0.0958      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.61       |
+|    explained_variance   | 0.866       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.5         |
+|    n_updates            | 340         |
+|    policy_gradient_loss | -0.00567    |
+|    std                  | 0.986       |
+|    value_loss           | 3.07        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 295      |
+|    ep_rew_mean     | -8.91    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 953      |
+|    iterations      | 35       |
+|    time_elapsed    | 601      |
+|    total_timesteps | 573440   |
+---------------------------------
+Eval num_timesteps=580000, episode_reward=-25.32 +/- 1.38
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -25.3       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 580000      |
+| train/                  |             |
+|    approx_kl            | 0.007266689 |
+|    clip_fraction        | 0.0704      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.62       |
+|    explained_variance   | 0.879       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.1         |
+|    n_updates            | 350         |
+|    policy_gradient_loss | -0.00415    |
+|    std                  | 0.985       |
+|    value_loss           | 2.74        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 304      |
+|    ep_rew_mean     | -8.18    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 951      |
+|    iterations      | 36       |
+|    time_elapsed    | 619      |
+|    total_timesteps | 589824   |
+---------------------------------
+Eval num_timesteps=600000, episode_reward=-24.37 +/- 1.09
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -24.4        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 600000       |
+| train/                  |              |
+|    approx_kl            | 0.0079650935 |
+|    clip_fraction        | 0.0952       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.61        |
+|    explained_variance   | 0.861        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.34         |
+|    n_updates            | 360          |
+|    policy_gradient_loss | -0.00525     |
+|    std                  | 0.983        |
+|    value_loss           | 3.11         |
+------------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 313      |
+|    ep_rew_mean     | -9.22    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 949      |
+|    iterations      | 37       |
+|    time_elapsed    | 638      |
+|    total_timesteps | 606208   |
+---------------------------------
+Eval num_timesteps=620000, episode_reward=-24.28 +/- 0.95
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -24.3       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 620000      |
+| train/                  |             |
+|    approx_kl            | 0.007730564 |
+|    clip_fraction        | 0.0717      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.6        |
+|    explained_variance   | 0.916       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.767       |
+|    n_updates            | 370         |
+|    policy_gradient_loss | -0.00492    |
+|    std                  | 0.983       |
+|    value_loss           | 1.68        |
+-----------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 335      |
+|    ep_rew_mean     | -12      |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 948      |
+|    iterations      | 38       |
+|    time_elapsed    | 656      |
+|    total_timesteps | 622592   |
+---------------------------------
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| rollout/                |              |
+|    ep_len_mean          | 336          |
+|    ep_rew_mean          | -13.7        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    fps                  | 954          |
+|    iterations           | 39           |
+|    time_elapsed         | 669          |
+|    total_timesteps      | 638976       |
+| train/                  |              |
+|    approx_kl            | 0.0076419385 |
+|    clip_fraction        | 0.0968       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.61        |
+|    explained_variance   | 0.921        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.09         |
+|    n_updates            | 380          |
+|    policy_gradient_loss | -0.00456     |
+|    std                  | 0.984        |
+|    value_loss           | 2.21         |
+------------------------------------------
+Eval num_timesteps=640000, episode_reward=-23.24 +/- 0.53
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -23.2        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 640000       |
+| train/                  |              |
+|    approx_kl            | 0.0072388994 |
+|    clip_fraction        | 0.0656       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.62        |
+|    explained_variance   | 0.911        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.994        |
+|    n_updates            | 390          |
+|    policy_gradient_loss | -0.00455     |
+|    std                  | 0.988        |
+|    value_loss           | 2.31         |
+------------------------------------------
+New best mean reward!
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 338      |
+|    ep_rew_mean     | -13.8    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 953      |
+|    iterations      | 40       |
+|    time_elapsed    | 686      |
+|    total_timesteps | 655360   |
+---------------------------------
+Eval num_timesteps=660000, episode_reward=-32.50 +/- 11.25
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -32.5       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 660000      |
+| train/                  |             |
+|    approx_kl            | 0.007228642 |
+|    clip_fraction        | 0.0838      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.63       |
+|    explained_variance   | 0.945       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.676       |
+|    n_updates            | 400         |
+|    policy_gradient_loss | -0.00484    |
+|    std                  | 0.988       |
+|    value_loss           | 1.58        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 350      |
+|    ep_rew_mean     | -15.3    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 953      |
+|    iterations      | 41       |
+|    time_elapsed    | 704      |
+|    total_timesteps | 671744   |
+---------------------------------
+Eval num_timesteps=680000, episode_reward=-33.63 +/- 12.78
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -33.6       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 680000      |
+| train/                  |             |
+|    approx_kl            | 0.007028832 |
+|    clip_fraction        | 0.0907      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.62       |
+|    explained_variance   | 0.958       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.607       |
+|    n_updates            | 410         |
+|    policy_gradient_loss | -0.00505    |
+|    std                  | 0.987       |
+|    value_loss           | 1.32        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 345      |
+|    ep_rew_mean     | -15.5    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 951      |
+|    iterations      | 42       |
+|    time_elapsed    | 723      |
+|    total_timesteps | 688128   |
+---------------------------------
+Eval num_timesteps=700000, episode_reward=-39.91 +/- 14.04
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -39.9       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 700000      |
+| train/                  |             |
+|    approx_kl            | 0.008621246 |
+|    clip_fraction        | 0.097       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.62       |
+|    explained_variance   | 0.927       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.31        |
+|    n_updates            | 420         |
+|    policy_gradient_loss | -0.00515    |
+|    std                  | 0.988       |
+|    value_loss           | 2.33        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 327      |
+|    ep_rew_mean     | -14.3    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 949      |
+|    iterations      | 43       |
+|    time_elapsed    | 741      |
+|    total_timesteps | 704512   |
+---------------------------------
+Eval num_timesteps=720000, episode_reward=-52.60 +/- 12.42
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -52.6       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 720000      |
+| train/                  |             |
+|    approx_kl            | 0.007893031 |
+|    clip_fraction        | 0.0832      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.63       |
+|    explained_variance   | 0.935       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.13        |
+|    n_updates            | 430         |
+|    policy_gradient_loss | -0.0047     |
+|    std                  | 0.99        |
+|    value_loss           | 2.14        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 354      |
+|    ep_rew_mean     | -17      |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 947      |
+|    iterations      | 44       |
+|    time_elapsed    | 760      |
+|    total_timesteps | 720896   |
+---------------------------------
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 360         |
+|    ep_rew_mean          | -20.2       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    fps                  | 954         |
+|    iterations           | 45          |
+|    time_elapsed         | 772         |
+|    total_timesteps      | 737280      |
+| train/                  |             |
+|    approx_kl            | 0.007349366 |
+|    clip_fraction        | 0.0757      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.64       |
+|    explained_variance   | 0.943       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.817       |
+|    n_updates            | 440         |
+|    policy_gradient_loss | -0.00403    |
+|    std                  | 0.994       |
+|    value_loss           | 1.8         |
+-----------------------------------------
+Eval num_timesteps=740000, episode_reward=-25.34 +/- 3.45
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -25.3       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 740000      |
+| train/                  |             |
+|    approx_kl            | 0.007281579 |
+|    clip_fraction        | 0.0745      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.64       |
+|    explained_variance   | 0.957       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.566       |
+|    n_updates            | 450         |
+|    policy_gradient_loss | -0.00467    |
+|    std                  | 0.992       |
+|    value_loss           | 1.37        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 347      |
+|    ep_rew_mean     | -20.3    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 953      |
+|    iterations      | 46       |
+|    time_elapsed    | 790      |
+|    total_timesteps | 753664   |
+---------------------------------
+Eval num_timesteps=760000, episode_reward=-58.04 +/- 5.81
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -58         |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 760000      |
+| train/                  |             |
+|    approx_kl            | 0.007440264 |
+|    clip_fraction        | 0.079       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.65       |
+|    explained_variance   | 0.935       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.941       |
+|    n_updates            | 460         |
+|    policy_gradient_loss | -0.0046     |
+|    std                  | 0.996       |
+|    value_loss           | 2.24        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 326      |
+|    ep_rew_mean     | -16.9    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 951      |
+|    iterations      | 47       |
+|    time_elapsed    | 809      |
+|    total_timesteps | 770048   |
+---------------------------------
+Eval num_timesteps=780000, episode_reward=-57.03 +/- 10.28
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -57         |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 780000      |
+| train/                  |             |
+|    approx_kl            | 0.007310465 |
+|    clip_fraction        | 0.0745      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.65       |
+|    explained_variance   | 0.941       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.987       |
+|    n_updates            | 470         |
+|    policy_gradient_loss | -0.00436    |
+|    std                  | 0.994       |
+|    value_loss           | 2.12        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 328      |
+|    ep_rew_mean     | -19.3    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 950      |
+|    iterations      | 48       |
+|    time_elapsed    | 827      |
+|    total_timesteps | 786432   |
+---------------------------------
+Eval num_timesteps=800000, episode_reward=-64.51 +/- 2.36
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -64.5       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 800000      |
+| train/                  |             |
+|    approx_kl            | 0.007530256 |
+|    clip_fraction        | 0.0838      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.65       |
+|    explained_variance   | 0.941       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.22        |
+|    n_updates            | 480         |
+|    policy_gradient_loss | -0.00392    |
+|    std                  | 0.997       |
+|    value_loss           | 2.17        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 303      |
+|    ep_rew_mean     | -16.2    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 949      |
+|    iterations      | 49       |
+|    time_elapsed    | 845      |
+|    total_timesteps | 802816   |
+---------------------------------
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 292         |
+|    ep_rew_mean          | -15.2       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    fps                  | 954         |
+|    iterations           | 50          |
+|    time_elapsed         | 858         |
+|    total_timesteps      | 819200      |
+| train/                  |             |
+|    approx_kl            | 0.006472503 |
+|    clip_fraction        | 0.0632      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.66       |
+|    explained_variance   | 0.917       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.32        |
+|    n_updates            | 490         |
+|    policy_gradient_loss | -0.00481    |
+|    std                  | 1           |
+|    value_loss           | 2.98        |
+-----------------------------------------
+Eval num_timesteps=820000, episode_reward=-37.01 +/- 11.19
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -37          |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 820000       |
+| train/                  |              |
+|    approx_kl            | 0.0076839877 |
+|    clip_fraction        | 0.0808       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.67        |
+|    explained_variance   | 0.932        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.03         |
+|    n_updates            | 500          |
+|    policy_gradient_loss | -0.00524     |
+|    std                  | 0.999        |
+|    value_loss           | 2.32         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 320      |
+|    ep_rew_mean     | -14.3    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 954      |
+|    iterations      | 51       |
+|    time_elapsed    | 875      |
+|    total_timesteps | 835584   |
+---------------------------------
+Eval num_timesteps=840000, episode_reward=-52.79 +/- 5.40
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -52.8       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 840000      |
+| train/                  |             |
+|    approx_kl            | 0.007195095 |
+|    clip_fraction        | 0.0692      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.66       |
+|    explained_variance   | 0.94        |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.847       |
+|    n_updates            | 510         |
+|    policy_gradient_loss | -0.00474    |
+|    std                  | 0.994       |
+|    value_loss           | 1.86        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 324      |
+|    ep_rew_mean     | -14.1    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 952      |
+|    iterations      | 52       |
+|    time_elapsed    | 894      |
+|    total_timesteps | 851968   |
+---------------------------------
+Eval num_timesteps=860000, episode_reward=-58.30 +/- 6.46
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -58.3       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 860000      |
+| train/                  |             |
+|    approx_kl            | 0.006765244 |
+|    clip_fraction        | 0.0719      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.64       |
+|    explained_variance   | 0.92        |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.1         |
+|    n_updates            | 520         |
+|    policy_gradient_loss | -0.00407    |
+|    std                  | 0.991       |
+|    value_loss           | 2.74        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 330      |
+|    ep_rew_mean     | -18.1    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 951      |
+|    iterations      | 53       |
+|    time_elapsed    | 912      |
+|    total_timesteps | 868352   |
+---------------------------------
+Eval num_timesteps=880000, episode_reward=-39.72 +/- 6.21
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -39.7       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 880000      |
+| train/                  |             |
+|    approx_kl            | 0.006595727 |
+|    clip_fraction        | 0.0677      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.63       |
+|    explained_variance   | 0.957       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.667       |
+|    n_updates            | 530         |
+|    policy_gradient_loss | -0.00426    |
+|    std                  | 0.99        |
+|    value_loss           | 1.69        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 337      |
+|    ep_rew_mean     | -20.1    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 951      |
+|    iterations      | 54       |
+|    time_elapsed    | 930      |
+|    total_timesteps | 884736   |
+---------------------------------
+Eval num_timesteps=900000, episode_reward=-43.34 +/- 2.98
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -43.3        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 900000       |
+| train/                  |              |
+|    approx_kl            | 0.0071652895 |
+|    clip_fraction        | 0.0906       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.63        |
+|    explained_variance   | 0.947        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.781        |
+|    n_updates            | 540          |
+|    policy_gradient_loss | -0.00516     |
+|    std                  | 0.99         |
+|    value_loss           | 1.73         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 346      |
+|    ep_rew_mean     | -18.9    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 950      |
+|    iterations      | 55       |
+|    time_elapsed    | 947      |
+|    total_timesteps | 901120   |
+---------------------------------
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| rollout/                |              |
+|    ep_len_mean          | 353          |
+|    ep_rew_mean          | -17.2        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    fps                  | 954          |
+|    iterations           | 56           |
+|    time_elapsed         | 961          |
+|    total_timesteps      | 917504       |
+| train/                  |              |
+|    approx_kl            | 0.0069283955 |
+|    clip_fraction        | 0.0794       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.63        |
+|    explained_variance   | 0.945        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.846        |
+|    n_updates            | 550          |
+|    policy_gradient_loss | -0.00479     |
+|    std                  | 0.989        |
+|    value_loss           | 1.88         |
+------------------------------------------
+Eval num_timesteps=920000, episode_reward=-34.95 +/- 8.89
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -35         |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 920000      |
+| train/                  |             |
+|    approx_kl            | 0.007794909 |
+|    clip_fraction        | 0.075       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.62       |
+|    explained_variance   | 0.951       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.72        |
+|    n_updates            | 560         |
+|    policy_gradient_loss | -0.00466    |
+|    std                  | 0.986       |
+|    value_loss           | 1.55        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 359      |
+|    ep_rew_mean     | -20.3    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 953      |
+|    iterations      | 57       |
+|    time_elapsed    | 979      |
+|    total_timesteps | 933888   |
+---------------------------------
+Eval num_timesteps=940000, episode_reward=-44.57 +/- 6.48
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -44.6        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 940000       |
+| train/                  |              |
+|    approx_kl            | 0.0066022202 |
+|    clip_fraction        | 0.0758       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.62        |
+|    explained_variance   | 0.952        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.668        |
+|    n_updates            | 570          |
+|    policy_gradient_loss | -0.00492     |
+|    std                  | 0.987        |
+|    value_loss           | 1.69         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 351      |
+|    ep_rew_mean     | -19.4    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 952      |
+|    iterations      | 58       |
+|    time_elapsed    | 997      |
+|    total_timesteps | 950272   |
+---------------------------------
+Eval num_timesteps=960000, episode_reward=-47.04 +/- 5.94
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+----------------------------------------
+| curriculum/             |            |
+|    level                | 0          |
+| eval/                   |            |
+|    mean_ep_length       | 450        |
+|    mean_reward          | -47        |
+|    success_rate         | 0          |
+| time/                   |            |
+|    total_timesteps      | 960000     |
+| train/                  |            |
+|    approx_kl            | 0.00658382 |
+|    clip_fraction        | 0.0868     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -5.62      |
+|    explained_variance   | 0.95       |
+|    learning_rate        | 0.0003     |
+|    loss                 | 0.556      |
+|    n_updates            | 580        |
+|    policy_gradient_loss | -0.00543   |
+|    std                  | 0.986      |
+|    value_loss           | 1.62       |
+----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 379      |
+|    ep_rew_mean     | -20.5    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 951      |
+|    iterations      | 59       |
+|    time_elapsed    | 1015     |
+|    total_timesteps | 966656   |
+---------------------------------
+Eval num_timesteps=980000, episode_reward=-50.71 +/- 4.65
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -50.7       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 980000      |
+| train/                  |             |
+|    approx_kl            | 0.008545077 |
+|    clip_fraction        | 0.101       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.61       |
+|    explained_variance   | 0.967       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.432       |
+|    n_updates            | 590         |
+|    policy_gradient_loss | -0.00589    |
+|    std                  | 0.981       |
+|    value_loss           | 1.11        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 388      |
+|    ep_rew_mean     | -21.7    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 950      |
+|    iterations      | 60       |
+|    time_elapsed    | 1034     |
+|    total_timesteps | 983040   |
+---------------------------------
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| rollout/                |              |
+|    ep_len_mean          | 367          |
+|    ep_rew_mean          | -19.3        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    fps                  | 953          |
+|    iterations           | 61           |
+|    time_elapsed         | 1047         |
+|    total_timesteps      | 999424       |
+| train/                  |              |
+|    approx_kl            | 0.0071004215 |
+|    clip_fraction        | 0.0852       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.59        |
+|    explained_variance   | 0.956        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.679        |
+|    n_updates            | 600          |
+|    policy_gradient_loss | -0.00426     |
+|    std                  | 0.98         |
+|    value_loss           | 1.42         |
+------------------------------------------
+Eval num_timesteps=1000000, episode_reward=-59.72 +/- 7.05
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -59.7       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1000000     |
+| train/                  |             |
+|    approx_kl            | 0.009192785 |
+|    clip_fraction        | 0.0832      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.59       |
+|    explained_variance   | 0.951       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.681       |
+|    n_updates            | 610         |
+|    policy_gradient_loss | -0.00463    |
+|    std                  | 0.978       |
+|    value_loss           | 1.57        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 359      |
+|    ep_rew_mean     | -19.9    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 953      |
+|    iterations      | 62       |
+|    time_elapsed    | 1065     |
+|    total_timesteps | 1015808  |
+---------------------------------
+Eval num_timesteps=1020000, episode_reward=-54.12 +/- 7.17
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -54.1        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 1020000      |
+| train/                  |              |
+|    approx_kl            | 0.0068938266 |
+|    clip_fraction        | 0.0945       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.58        |
+|    explained_variance   | 0.953        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.55         |
+|    n_updates            | 620          |
+|    policy_gradient_loss | -0.00571     |
+|    std                  | 0.979        |
+|    value_loss           | 1.61         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 361      |
+|    ep_rew_mean     | -19.8    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 952      |
+|    iterations      | 63       |
+|    time_elapsed    | 1083     |
+|    total_timesteps | 1032192  |
+---------------------------------
+Eval num_timesteps=1040000, episode_reward=-46.35 +/- 16.30
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -46.3       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1040000     |
+| train/                  |             |
+|    approx_kl            | 0.006859045 |
+|    clip_fraction        | 0.0872      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.58       |
+|    explained_variance   | 0.948       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.699       |
+|    n_updates            | 630         |
+|    policy_gradient_loss | -0.00604    |
+|    std                  | 0.975       |
+|    value_loss           | 1.8         |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 362      |
+|    ep_rew_mean     | -17.7    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 949      |
+|    iterations      | 64       |
+|    time_elapsed    | 1103     |
+|    total_timesteps | 1048576  |
+---------------------------------
+Eval num_timesteps=1060000, episode_reward=-44.08 +/- 12.41
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -44.1        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 1060000      |
+| train/                  |              |
+|    approx_kl            | 0.0076111383 |
+|    clip_fraction        | 0.0865       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.57        |
+|    explained_variance   | 0.959        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.805        |
+|    n_updates            | 640          |
+|    policy_gradient_loss | -0.00526     |
+|    std                  | 0.974        |
+|    value_loss           | 1.43         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 340      |
+|    ep_rew_mean     | -14.2    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 948      |
+|    iterations      | 65       |
+|    time_elapsed    | 1122     |
+|    total_timesteps | 1064960  |
+---------------------------------
+Eval num_timesteps=1080000, episode_reward=-54.03 +/- 17.56
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -54         |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1080000     |
+| train/                  |             |
+|    approx_kl            | 0.007978347 |
+|    clip_fraction        | 0.0948      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.57       |
+|    explained_variance   | 0.909       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.16        |
+|    n_updates            | 650         |
+|    policy_gradient_loss | -0.00517    |
+|    std                  | 0.977       |
+|    value_loss           | 2.59        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 354      |
+|    ep_rew_mean     | -16      |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 947      |
+|    iterations      | 66       |
+|    time_elapsed    | 1140     |
+|    total_timesteps | 1081344  |
+---------------------------------
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 355         |
+|    ep_rew_mean          | -16.6       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    fps                  | 951         |
+|    iterations           | 67          |
+|    time_elapsed         | 1154        |
+|    total_timesteps      | 1097728     |
+| train/                  |             |
+|    approx_kl            | 0.008131035 |
+|    clip_fraction        | 0.0805      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.57       |
+|    explained_variance   | 0.942       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.937       |
+|    n_updates            | 660         |
+|    policy_gradient_loss | -0.00429    |
+|    std                  | 0.973       |
+|    value_loss           | 1.66        |
+-----------------------------------------
+Eval num_timesteps=1100000, episode_reward=-65.85 +/- 10.56
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -65.9       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1100000     |
+| train/                  |             |
+|    approx_kl            | 0.008433658 |
+|    clip_fraction        | 0.102       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.56       |
+|    explained_variance   | 0.932       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.11        |
+|    n_updates            | 670         |
+|    policy_gradient_loss | -0.00589    |
+|    std                  | 0.971       |
+|    value_loss           | 2.25        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 325      |
+|    ep_rew_mean     | -14.9    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 950      |
+|    iterations      | 68       |
+|    time_elapsed    | 1172     |
+|    total_timesteps | 1114112  |
+---------------------------------
+Eval num_timesteps=1120000, episode_reward=-72.81 +/- 5.83
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -72.8       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1120000     |
+| train/                  |             |
+|    approx_kl            | 0.008009687 |
+|    clip_fraction        | 0.0761      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.55       |
+|    explained_variance   | 0.932       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.867       |
+|    n_updates            | 680         |
+|    policy_gradient_loss | -0.00517    |
+|    std                  | 0.972       |
+|    value_loss           | 2.01        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 337      |
+|    ep_rew_mean     | -17.5    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 949      |
+|    iterations      | 69       |
+|    time_elapsed    | 1191     |
+|    total_timesteps | 1130496  |
+---------------------------------
+Eval num_timesteps=1140000, episode_reward=-46.48 +/- 12.99
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -46.5       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1140000     |
+| train/                  |             |
+|    approx_kl            | 0.006939183 |
+|    clip_fraction        | 0.0716      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.56       |
+|    explained_variance   | 0.948       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.622       |
+|    n_updates            | 690         |
+|    policy_gradient_loss | -0.00429    |
+|    std                  | 0.972       |
+|    value_loss           | 1.76        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 344      |
+|    ep_rew_mean     | -18.7    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 948      |
+|    iterations      | 70       |
+|    time_elapsed    | 1208     |
+|    total_timesteps | 1146880  |
+---------------------------------
+Eval num_timesteps=1160000, episode_reward=-52.05 +/- 17.29
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -52.1       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1160000     |
+| train/                  |             |
+|    approx_kl            | 0.008501164 |
+|    clip_fraction        | 0.0866      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.56       |
+|    explained_variance   | 0.936       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.944       |
+|    n_updates            | 700         |
+|    policy_gradient_loss | -0.00418    |
+|    std                  | 0.971       |
+|    value_loss           | 1.99        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 342      |
+|    ep_rew_mean     | -16.8    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 947      |
+|    iterations      | 71       |
+|    time_elapsed    | 1227     |
+|    total_timesteps | 1163264  |
+---------------------------------
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| rollout/                |              |
+|    ep_len_mean          | 340          |
+|    ep_rew_mean          | -16.3        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    fps                  | 949          |
+|    iterations           | 72           |
+|    time_elapsed         | 1241         |
+|    total_timesteps      | 1179648      |
+| train/                  |              |
+|    approx_kl            | 0.0067739096 |
+|    clip_fraction        | 0.0851       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.56        |
+|    explained_variance   | 0.945        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.675        |
+|    n_updates            | 710          |
+|    policy_gradient_loss | -0.00568     |
+|    std                  | 0.973        |
+|    value_loss           | 1.76         |
+------------------------------------------
+Eval num_timesteps=1180000, episode_reward=-46.64 +/- 14.70
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -46.6       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1180000     |
+| train/                  |             |
+|    approx_kl            | 0.007686487 |
+|    clip_fraction        | 0.0798      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.56       |
+|    explained_variance   | 0.948       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.692       |
+|    n_updates            | 720         |
+|    policy_gradient_loss | -0.00471    |
+|    std                  | 0.971       |
+|    value_loss           | 1.71        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 346      |
+|    ep_rew_mean     | -18.2    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 949      |
+|    iterations      | 73       |
+|    time_elapsed    | 1260     |
+|    total_timesteps | 1196032  |
+---------------------------------
+Eval num_timesteps=1200000, episode_reward=-33.89 +/- 5.82
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -33.9       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1200000     |
+| train/                  |             |
+|    approx_kl            | 0.008241864 |
+|    clip_fraction        | 0.112       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.56       |
+|    explained_variance   | 0.953       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.772       |
+|    n_updates            | 730         |
+|    policy_gradient_loss | -0.00593    |
+|    std                  | 0.973       |
+|    value_loss           | 1.47        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 338      |
+|    ep_rew_mean     | -15.2    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 948      |
+|    iterations      | 74       |
+|    time_elapsed    | 1278     |
+|    total_timesteps | 1212416  |
+---------------------------------
+Eval num_timesteps=1220000, episode_reward=-61.70 +/- 11.29
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -61.7       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1220000     |
+| train/                  |             |
+|    approx_kl            | 0.008463452 |
+|    clip_fraction        | 0.103       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.57       |
+|    explained_variance   | 0.926       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.955       |
+|    n_updates            | 740         |
+|    policy_gradient_loss | -0.00571    |
+|    std                  | 0.977       |
+|    value_loss           | 2.4         |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 312      |
+|    ep_rew_mean     | -11.2    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 946      |
+|    iterations      | 75       |
+|    time_elapsed    | 1297     |
+|    total_timesteps | 1228800  |
+---------------------------------
+Eval num_timesteps=1240000, episode_reward=-54.24 +/- 12.19
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -54.2       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1240000     |
+| train/                  |             |
+|    approx_kl            | 0.006678527 |
+|    clip_fraction        | 0.0718      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.56       |
+|    explained_variance   | 0.908       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.14        |
+|    n_updates            | 750         |
+|    policy_gradient_loss | -0.00374    |
+|    std                  | 0.971       |
+|    value_loss           | 2.69        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 327      |
+|    ep_rew_mean     | -12.8    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 945      |
+|    iterations      | 76       |
+|    time_elapsed    | 1316     |
+|    total_timesteps | 1245184  |
+---------------------------------
+Eval num_timesteps=1260000, episode_reward=-63.08 +/- 14.02
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -63.1       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1260000     |
+| train/                  |             |
+|    approx_kl            | 0.006401954 |
+|    clip_fraction        | 0.0718      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.56       |
+|    explained_variance   | 0.957       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.626       |
+|    n_updates            | 760         |
+|    policy_gradient_loss | -0.00389    |
+|    std                  | 0.977       |
+|    value_loss           | 1.29        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 345      |
+|    ep_rew_mean     | -15.7    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 944      |
+|    iterations      | 77       |
+|    time_elapsed    | 1335     |
+|    total_timesteps | 1261568  |
+---------------------------------
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 342         |
+|    ep_rew_mean          | -17.2       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    fps                  | 947         |
+|    iterations           | 78          |
+|    time_elapsed         | 1348        |
+|    total_timesteps      | 1277952     |
+| train/                  |             |
+|    approx_kl            | 0.005779417 |
+|    clip_fraction        | 0.0699      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.57       |
+|    explained_variance   | 0.938       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.875       |
+|    n_updates            | 770         |
+|    policy_gradient_loss | -0.00396    |
+|    std                  | 0.974       |
+|    value_loss           | 2.11        |
+-----------------------------------------
+Eval num_timesteps=1280000, episode_reward=-72.83 +/- 5.31
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -72.8        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 1280000      |
+| train/                  |              |
+|    approx_kl            | 0.0059310384 |
+|    clip_fraction        | 0.0668       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.55        |
+|    explained_variance   | 0.946        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.664        |
+|    n_updates            | 780          |
+|    policy_gradient_loss | -0.00369     |
+|    std                  | 0.97         |
+|    value_loss           | 1.75         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 347      |
+|    ep_rew_mean     | -17.8    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 947      |
+|    iterations      | 79       |
+|    time_elapsed    | 1366     |
+|    total_timesteps | 1294336  |
+---------------------------------
+Eval num_timesteps=1300000, episode_reward=-71.67 +/- 4.58
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -71.7        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 1300000      |
+| train/                  |              |
+|    approx_kl            | 0.0076597235 |
+|    clip_fraction        | 0.0873       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.55        |
+|    explained_variance   | 0.937        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.868        |
+|    n_updates            | 790          |
+|    policy_gradient_loss | -0.00454     |
+|    std                  | 0.97         |
+|    value_loss           | 2.13         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 334      |
+|    ep_rew_mean     | -15.9    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 946      |
+|    iterations      | 80       |
+|    time_elapsed    | 1384     |
+|    total_timesteps | 1310720  |
+---------------------------------
+Eval num_timesteps=1320000, episode_reward=-77.44 +/- 11.60
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -77.4        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 1320000      |
+| train/                  |              |
+|    approx_kl            | 0.0071638864 |
+|    clip_fraction        | 0.0797       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.55        |
+|    explained_variance   | 0.952        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.635        |
+|    n_updates            | 800          |
+|    policy_gradient_loss | -0.00473     |
+|    std                  | 0.971        |
+|    value_loss           | 1.44         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 345      |
+|    ep_rew_mean     | -18.4    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 946      |
+|    iterations      | 81       |
+|    time_elapsed    | 1402     |
+|    total_timesteps | 1327104  |
+---------------------------------
+Eval num_timesteps=1340000, episode_reward=-74.38 +/- 18.49
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -74.4       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1340000     |
+| train/                  |             |
+|    approx_kl            | 0.008322882 |
+|    clip_fraction        | 0.0882      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.56       |
+|    explained_variance   | 0.935       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.933       |
+|    n_updates            | 810         |
+|    policy_gradient_loss | -0.00631    |
+|    std                  | 0.976       |
+|    value_loss           | 2.17        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 351      |
+|    ep_rew_mean     | -18.5    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 945      |
+|    iterations      | 82       |
+|    time_elapsed    | 1420     |
+|    total_timesteps | 1343488  |
+---------------------------------
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 358         |
+|    ep_rew_mean          | -18.3       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    fps                  | 947         |
+|    iterations           | 83          |
+|    time_elapsed         | 1434        |
+|    total_timesteps      | 1359872     |
+| train/                  |             |
+|    approx_kl            | 0.008464709 |
+|    clip_fraction        | 0.0745      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.57       |
+|    explained_variance   | 0.951       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.602       |
+|    n_updates            | 820         |
+|    policy_gradient_loss | -0.00379    |
+|    std                  | 0.975       |
+|    value_loss           | 1.51        |
+-----------------------------------------
+Eval num_timesteps=1360000, episode_reward=-68.02 +/- 17.96
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -68          |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 1360000      |
+| train/                  |              |
+|    approx_kl            | 0.0067240805 |
+|    clip_fraction        | 0.0894       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.56        |
+|    explained_variance   | 0.945        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.809        |
+|    n_updates            | 830          |
+|    policy_gradient_loss | -0.00562     |
+|    std                  | 0.975        |
+|    value_loss           | 1.7          |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 356      |
+|    ep_rew_mean     | -21      |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 947      |
+|    iterations      | 84       |
+|    time_elapsed    | 1453     |
+|    total_timesteps | 1376256  |
+---------------------------------
+Eval num_timesteps=1380000, episode_reward=-71.15 +/- 11.98
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -71.1       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1380000     |
+| train/                  |             |
+|    approx_kl            | 0.008378034 |
+|    clip_fraction        | 0.0896      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.56       |
+|    explained_variance   | 0.961       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.483       |
+|    n_updates            | 840         |
+|    policy_gradient_loss | -0.00526    |
+|    std                  | 0.972       |
+|    value_loss           | 1.31        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 332      |
+|    ep_rew_mean     | -20      |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 945      |
+|    iterations      | 85       |
+|    time_elapsed    | 1472     |
+|    total_timesteps | 1392640  |
+---------------------------------
+Eval num_timesteps=1400000, episode_reward=-60.94 +/- 16.11
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -60.9       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1400000     |
+| train/                  |             |
+|    approx_kl            | 0.006894199 |
+|    clip_fraction        | 0.0714      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.55       |
+|    explained_variance   | 0.938       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.827       |
+|    n_updates            | 850         |
+|    policy_gradient_loss | -0.00487    |
+|    std                  | 0.971       |
+|    value_loss           | 2.03        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 337      |
+|    ep_rew_mean     | -16.9    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 945      |
+|    iterations      | 86       |
+|    time_elapsed    | 1490     |
+|    total_timesteps | 1409024  |
+---------------------------------
+Eval num_timesteps=1420000, episode_reward=-71.52 +/- 15.34
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -71.5        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 1420000      |
+| train/                  |              |
+|    approx_kl            | 0.0073464923 |
+|    clip_fraction        | 0.0874       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.54        |
+|    explained_variance   | 0.941        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.906        |
+|    n_updates            | 860          |
+|    policy_gradient_loss | -0.00513     |
+|    std                  | 0.969        |
+|    value_loss           | 2.01         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 350      |
+|    ep_rew_mean     | -17.3    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 944      |
+|    iterations      | 87       |
+|    time_elapsed    | 1508     |
+|    total_timesteps | 1425408  |
+---------------------------------
+Eval num_timesteps=1440000, episode_reward=-67.61 +/- 13.82
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -67.6       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1440000     |
+| train/                  |             |
+|    approx_kl            | 0.006121702 |
+|    clip_fraction        | 0.0746      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.54       |
+|    explained_variance   | 0.946       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.732       |
+|    n_updates            | 870         |
+|    policy_gradient_loss | -0.0049     |
+|    std                  | 0.969       |
+|    value_loss           | 1.73        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 362      |
+|    ep_rew_mean     | -18.5    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 944      |
+|    iterations      | 88       |
+|    time_elapsed    | 1526     |
+|    total_timesteps | 1441792  |
+---------------------------------
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 376         |
+|    ep_rew_mean          | -18.9       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    fps                  | 946         |
+|    iterations           | 89          |
+|    time_elapsed         | 1540        |
+|    total_timesteps      | 1458176     |
+| train/                  |             |
+|    approx_kl            | 0.006975466 |
+|    clip_fraction        | 0.0878      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.53       |
+|    explained_variance   | 0.958       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.678       |
+|    n_updates            | 880         |
+|    policy_gradient_loss | -0.00454    |
+|    std                  | 0.964       |
+|    value_loss           | 1.26        |
+-----------------------------------------
+Eval num_timesteps=1460000, episode_reward=-59.59 +/- 12.78
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+----------------------------------------
+| curriculum/             |            |
+|    level                | 0          |
+| eval/                   |            |
+|    mean_ep_length       | 450        |
+|    mean_reward          | -59.6      |
+|    success_rate         | 0          |
+| time/                   |            |
+|    total_timesteps      | 1460000    |
+| train/                  |            |
+|    approx_kl            | 0.00778188 |
+|    clip_fraction        | 0.0921     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -5.51      |
+|    explained_variance   | 0.954      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 0.649      |
+|    n_updates            | 890        |
+|    policy_gradient_loss | -0.00534   |
+|    std                  | 0.964      |
+|    value_loss           | 1.5        |
+----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 395      |
+|    ep_rew_mean     | -22.3    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 945      |
+|    iterations      | 90       |
+|    time_elapsed    | 1559     |
+|    total_timesteps | 1474560  |
+---------------------------------
+Eval num_timesteps=1480000, episode_reward=-40.50 +/- 6.38
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -40.5        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 1480000      |
+| train/                  |              |
+|    approx_kl            | 0.0076380526 |
+|    clip_fraction        | 0.0889       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.51        |
+|    explained_variance   | 0.975        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.235        |
+|    n_updates            | 900          |
+|    policy_gradient_loss | -0.00495     |
+|    std                  | 0.964        |
+|    value_loss           | 0.767        |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 386      |
+|    ep_rew_mean     | -18.5    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 945      |
+|    iterations      | 91       |
+|    time_elapsed    | 1576     |
+|    total_timesteps | 1490944  |
+---------------------------------
+Eval num_timesteps=1500000, episode_reward=-44.26 +/- 5.65
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -44.3       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1500000     |
+| train/                  |             |
+|    approx_kl            | 0.006813798 |
+|    clip_fraction        | 0.0789      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.52       |
+|    explained_variance   | 0.945       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.792       |
+|    n_updates            | 910         |
+|    policy_gradient_loss | -0.00531    |
+|    std                  | 0.966       |
+|    value_loss           | 1.76        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 350      |
+|    ep_rew_mean     | -15.2    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 945      |
+|    iterations      | 92       |
+|    time_elapsed    | 1594     |
+|    total_timesteps | 1507328  |
+---------------------------------
+Eval num_timesteps=1520000, episode_reward=-29.81 +/- 10.48
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -29.8       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1520000     |
+| train/                  |             |
+|    approx_kl            | 0.008827946 |
+|    clip_fraction        | 0.106       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.53       |
+|    explained_variance   | 0.933       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.23        |
+|    n_updates            | 920         |
+|    policy_gradient_loss | -0.00564    |
+|    std                  | 0.969       |
+|    value_loss           | 2.16        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 354      |
+|    ep_rew_mean     | -14.7    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 944      |
+|    iterations      | 93       |
+|    time_elapsed    | 1613     |
+|    total_timesteps | 1523712  |
+---------------------------------
+Eval num_timesteps=1540000, episode_reward=-34.27 +/- 8.51
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -34.3       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1540000     |
+| train/                  |             |
+|    approx_kl            | 0.009772727 |
+|    clip_fraction        | 0.0972      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.53       |
+|    explained_variance   | 0.954       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.486       |
+|    n_updates            | 930         |
+|    policy_gradient_loss | -0.00573    |
+|    std                  | 0.968       |
+|    value_loss           | 1.31        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 377      |
+|    ep_rew_mean     | -17.5    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 943      |
+|    iterations      | 94       |
+|    time_elapsed    | 1632     |
+|    total_timesteps | 1540096  |
+---------------------------------
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| rollout/                |             |
+|    ep_len_mean          | 405         |
+|    ep_rew_mean          | -24.4       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    fps                  | 945         |
+|    iterations           | 95          |
+|    time_elapsed         | 1646        |
+|    total_timesteps      | 1556480     |
+| train/                  |             |
+|    approx_kl            | 0.007536567 |
+|    clip_fraction        | 0.0827      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.52       |
+|    explained_variance   | 0.971       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.405       |
+|    n_updates            | 940         |
+|    policy_gradient_loss | -0.00468    |
+|    std                  | 0.963       |
+|    value_loss           | 0.944       |
+-----------------------------------------
+Eval num_timesteps=1560000, episode_reward=-39.42 +/- 8.53
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -39.4       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1560000     |
+| train/                  |             |
+|    approx_kl            | 0.008162099 |
+|    clip_fraction        | 0.0914      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.51       |
+|    explained_variance   | 0.973       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.463       |
+|    n_updates            | 950         |
+|    policy_gradient_loss | -0.00478    |
+|    std                  | 0.962       |
+|    value_loss           | 0.895       |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 382      |
+|    ep_rew_mean     | -25.6    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 943      |
+|    iterations      | 96       |
+|    time_elapsed    | 1667     |
+|    total_timesteps | 1572864  |
+---------------------------------
+Eval num_timesteps=1580000, episode_reward=-37.92 +/- 3.01
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+-----------------------------------------
+| curriculum/             |             |
+|    level                | 0           |
+| eval/                   |             |
+|    mean_ep_length       | 450         |
+|    mean_reward          | -37.9       |
+|    success_rate         | 0           |
+| time/                   |             |
+|    total_timesteps      | 1580000     |
+| train/                  |             |
+|    approx_kl            | 0.008908274 |
+|    clip_fraction        | 0.093       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -5.51       |
+|    explained_variance   | 0.948       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.921       |
+|    n_updates            | 960         |
+|    policy_gradient_loss | -0.00546    |
+|    std                  | 0.962       |
+|    value_loss           | 1.89        |
+-----------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 328      |
+|    ep_rew_mean     | -19.8    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 942      |
+|    iterations      | 97       |
+|    time_elapsed    | 1685     |
+|    total_timesteps | 1589248  |
+---------------------------------
+Eval num_timesteps=1600000, episode_reward=-31.28 +/- 4.26
+Episode length: 450.00 +/- 0.00
+Success rate: 0.00%
+------------------------------------------
+| curriculum/             |              |
+|    level                | 0            |
+| eval/                   |              |
+|    mean_ep_length       | 450          |
+|    mean_reward          | -31.3        |
+|    success_rate         | 0            |
+| time/                   |              |
+|    total_timesteps      | 1600000      |
+| train/                  |              |
+|    approx_kl            | 0.0071197776 |
+|    clip_fraction        | 0.0766       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -5.51        |
+|    explained_variance   | 0.934        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.12         |
+|    n_updates            | 970          |
+|    policy_gradient_loss | -0.00535     |
+|    std                  | 0.965        |
+|    value_loss           | 2.29         |
+------------------------------------------
+---------------------------------
+| curriculum/        |          |
+|    level           | 0        |
+| rollout/           |          |
+|    ep_len_mean     | 321      |
+|    ep_rew_mean     | -16.6    |
+|    success_rate    | 0        |
+| time/              |          |
+|    fps             | 941      |
+|    iterations      | 98       |
+|    time_elapsed    | 1704     |
+|    total_timesteps | 1605632  |
+---------------------------------
+Process ForkServerProcess-8:
+[INFO] BaseAviary.__init__() loaded parameters from the drone's .urdf:
+[INFO] m 0.027000, L 0.039700,
+[INFO] ixx 0.000014, iyy 0.000014, izz 0.000022,
+[INFO] kf 3.160000e-10, km 7.940000e-12,
+[INFO] t2w 2.250000, max_speed_kmh 30.000000,
+[INFO] gnd_eff_coeff 11.368590, prop_radius 0.023135,
+[INFO] drag_xy_coeff 0.000001, drag_z_coeff 0.000001,
+[INFO] dw_coeff_1 2267.180000, dw_coeff_2 0.160000, dw_coeff_3 -0.110000
+[INFO] BaseAviary.__init__() loaded parameters from the drone's .urdf:
+[INFO] m 0.027000, L 0.039700,
+[INFO] ixx 0.000014, iyy 0.000014, izz 0.000022,
+[INFO] kf 3.160000e-10, km 7.940000e-12,
+[INFO] t2w 2.250000, max_speed_kmh 30.000000,
+[INFO] gnd_eff_coeff 11.368590, prop_radius 0.023135,
+[INFO] drag_xy_coeff 0.000001, drag_z_coeff 0.000001,
+[INFO] dw_coeff_1 2267.180000, dw_coeff_2 0.160000, dw_coeff_3 -0.110000
+[INFO] BaseAviary.__init__() loaded parameters from the drone's .urdf:
+[INFO] m 0.027000, L 0.039700,
+[INFO] ixx 0.000014, iyy 0.000014, izz 0.000022,
+[INFO] kf 3.160000e-10, km 7.940000e-12,
+[INFO] t2w 2.250000, max_speed_kmh 30.000000,
+[INFO] gnd_eff_coeff 11.368590, prop_radius 0.023135,
+[INFO] drag_xy_coeff 0.000001, drag_z_coeff 0.000001,
+[INFO] dw_coeff_1 2267.180000, dw_coeff_2 0.160000, dw_coeff_3 -0.110000
+[INFO] BaseAviary.__init__() loaded parameters from the drone's .urdf:
+[INFO] m 0.027000, L 0.039700,
+[INFO] ixx 0.000014, iyy 0.000014, izz 0.000022,
+[INFO] kf 3.160000e-10, km 7.940000e-12,
+[INFO] t2w 2.250000, max_speed_kmh 30.000000,
+[INFO] gnd_eff_coeff 11.368590, prop_radius 0.023135,
+[INFO] drag_xy_coeff 0.000001, drag_z_coeff 0.000001,
+[INFO] dw_coeff_1 2267.180000, dw_coeff_2 0.160000, dw_coeff_3 -0.110000
+[INFO] BaseAviary.__init__() loaded parameters from the drone's .urdf:
+[INFO] m 0.027000, L 0.039700,
+[INFO] ixx 0.000014, iyy 0.000014, izz 0.000022,
+[INFO] kf 3.160000e-10, km 7.940000e-12,
+[INFO] t2w 2.250000, max_speed_kmh 30.000000,
+[INFO] gnd_eff_coeff 11.368590, prop_radius 0.023135,
+[INFO] drag_xy_coeff 0.000001, drag_z_coeff 0.000001,
+[INFO] dw_coeff_1 2267.180000, dw_coeff_2 0.160000, dw_coeff_3 -0.110000
+[INFO] BaseAviary.__init__() loaded parameters from the drone's .urdf:
+[INFO] m 0.027000, L 0.039700,
+[INFO] ixx 0.000014, iyy 0.000014, izz 0.000022,
+[INFO] kf 3.160000e-10, km 7.940000e-12,
+[INFO] t2w 2.250000, max_speed_kmh 30.000000,
+[INFO] gnd_eff_coeff 11.368590, prop_radius 0.023135,
+[INFO] drag_xy_coeff 0.000001, drag_z_coeff 0.000001,
+[INFO] dw_coeff_1 2267.180000, dw_coeff_2 0.160000, dw_coeff_3 -0.110000
+[INFO] BaseAviary.__init__() loaded parameters from the drone's .urdf:
+[INFO] m 0.027000, L 0.039700,
+[INFO] ixx 0.000014, iyy 0.000014, izz 0.000022,
+[INFO] kf 3.160000e-10, km 7.940000e-12,
+[INFO] t2w 2.250000, max_speed_kmh 30.000000,
+[INFO] gnd_eff_coeff 11.368590, prop_radius 0.023135,
+[INFO] drag_xy_coeff 0.000001, drag_z_coeff 0.000001,
+[INFO] dw_coeff_1 2267.180000, dw_coeff_2 0.160000, dw_coeff_3 -0.110000
+Traceback (most recent call last):
+  File "/home/mikoay/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/mikoay/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/mikoay/Documents/RISA_2/drony/gym-pybullet-drones/.venv/lib/python3.12/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 33, in _worker
+    cmd, data = remote.recv()
+                ^^^^^^^^^^^^^
+  File "/home/mikoay/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/mikoay/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/connection.py", line 430, in _recv_bytes
+    buf = self._recv(4)
+          ^^^^^^^^^^^^^
+  File "/home/mikoay/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/connection.py", line 395, in _recv
+    chunk = read(handle, remaining)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+[INFO] BaseAviary.__init__() loaded parameters from the drone's .urdf:
+[INFO] m 0.027000, L 0.039700,
+[INFO] ixx 0.000014, iyy 0.000014, izz 0.000022,
+[INFO] kf 3.160000e-10, km 7.940000e-12,
+[INFO] t2w 2.250000, max_speed_kmh 30.000000,
+[INFO] gnd_eff_coeff 11.368590, prop_radius 0.023135,
+[INFO] drag_xy_coeff 0.000001, drag_z_coeff 0.000001,
+[INFO] dw_coeff_1 2267.180000, dw_coeff_2 0.160000, dw_coeff_3 -0.110000
