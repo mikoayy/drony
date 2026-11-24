@@ -50,6 +50,8 @@ def main():
     ap.add_argument("--downwash", action="store_true")
     ap.add_argument("--sensing_range", type=float, default=float("inf"))
     ap.add_argument("--obs_noise", type=float, default=0.0)
+    ap.add_argument("--turbulence", type=float, nargs="?", const=0.02, default=0.0,
+                    help="turbulencje w tubie, ułamek ciężaru drona (sama flaga = 0.02)")
     ap.add_argument("--lane_margin", type=float, default=0.03, help="zapas od ścianki dla ręcznego sterownika [m]")
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
@@ -62,7 +64,7 @@ def main():
         model = PPO.load(args.model, device="cpu")
 
     env = TubeAviary(tube_radius=args.radius, gui=args.gui,
-                     sensing_range=args.sensing_range, obs_noise=args.obs_noise,
+                     sensing_range=args.sensing_range, obs_noise=args.obs_noise, turbulence=args.turbulence,
                      physics=Physics.PYB_DW if args.downwash else Physics.PYB)
     outcomes, min_dists, returns = Counter(), [], []
     for ep in range(args.episodes):

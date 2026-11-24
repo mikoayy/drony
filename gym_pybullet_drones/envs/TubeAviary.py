@@ -54,6 +54,7 @@ class TubeAviary(BaseRLAviary):
                  randomize_start: bool = True,
                  sensing_range: float = np.inf,
                  obs_noise: float = 0.0,
+                 turbulence: float = 0.0,
                  drone_model: DroneModel = DroneModel.CF2X,
                  physics: Physics = Physics.PYB,
                  pyb_freq: int = 240,
@@ -85,6 +86,10 @@ class TubeAviary(BaseRLAviary):
             Zasięg, z jakiego dron "widzi" drugiego [m] (np.inf = zawsze).
         obs_noise : float
             Odchylenie standardowe szumu pomiaru pozycji drugiego drona [m].
+        turbulence : float
+            Siła zakłóceń aerodynamicznych w tubie jako ułamek ciężaru drona (0 = wyłączone,
+            np. 0.02). Losowe podmuchy (rosną w tubie i przy drugim dronie) plus przyciąganie
+            do bliskiej ścianki. To model zastępczy, a nie symulacja przepływu (patrz _turbulence).
         physics : Physics
             Physics.PYB_DW dodaje downwash (ważny, gdy drony mijają się jeden nad drugim).
         """
@@ -101,6 +106,12 @@ class TubeAviary(BaseRLAviary):
         self.RANDOMIZE_START = randomize_start
         self.SENSING_RANGE = sensing_range
         self.OBS_NOISE = obs_noise
+        self.TURBULENCE = turbulence
+        self.TURB_TAU = 0.3              # czas korelacji podmuchów [s]
+        self.TURB_NEAR = 0.5             # drugi dron bliżej niż tyle [m] wzmacnia podmuchy (do 2x)
+        self.WALL_RANGE = 0.05           # przyciąganie do ścianki działa, gdy luz < tyle [m]
+        self.WALL_GAIN = 2.0             # przy samej ściance: WALL_GAIN * turbulence * ciężar
+        self._turb = np.zeros((2, 3))
         self.OBS_DIM = 24
         self.tube_ids = []
         self._rng = np.random.default_rng()
@@ -174,6 +185,10 @@ class TubeAviary(BaseRLAviary):
         """Zmienia zakres losowania promienia (używane przez curriculum); działa od następnego epizodu."""
         self.TUBE_RADIUS_RANGE = (float(lo), float(hi))
 
+    def set_turbulence(self, strength):
+        """Zmienia siłę turbulencji (curriculum); działa od razu."""
+        self.TURBULENCE = float(strength)
+
     def _timeLeft(self):
         return max(0.0, 1.0 - self.step_counter / (self.PYB_FREQ * self.EPISODE_LEN_SEC))
 
@@ -190,6 +205,7 @@ class TubeAviary(BaseRLAviary):
         self._eval = None
         self._crossed = False
         self.cross_x = None
+        self._turb = np.zeros((2, 3))
         obs, info = super().reset(seed=seed, options=options)
         self._prev_phi = self._potential()
         return obs, info
@@ -219,6 +235,80 @@ class TubeAviary(BaseRLAviary):
                 goal = self.FRAME_ORIGIN[i] + self.FRAME_ROT[i] @ np.array([self.U_GOAL, 0, 0])
                 p.addUserDebugPoints([goal.tolist()], [colors[i]], pointSize=10,
                                      physicsClientId=self.CLIENT)
+
+    ################################################################################
+    #### Downwash ###################################################################
+
+    def _downwash(self, nth_drone):
+        """Strumień powietrza od drona lecącego wyżej (zastępuje model z BaseAviary).
+
+        Model z biblioteki rośnie jak 1/dz^2 i przy dronach na prawie tej samej wysokości
+        daje setki-tysiące N (dron waży 0.27 N). Tu strumień jest strugą o prędkości
+        indukowanej v_i = sqrt(T / (2 rho A)) pod wirnikami, która rozszerza się w dół
+        (promień r0 + spread*dz) i słabnie tak, żeby strumień pędu był stały (v ~ r0 / r).
+        Na dolnego drona działa opór w tej strudze: F = 0.5 rho Cd*A v^2, w dół.
+        """
+        rho, cd_area, spread = 1.225, 0.01, 0.2          # gęstość powietrza, Cd*A dolnego drona [m^2], rozszerzanie strugi
+        r0 = self.L + self.PROP_RADIUS                    # promień obszaru wirników ~0.063 m
+        disk = 4 * np.pi * self.PROP_RADIUS ** 2          # łączna powierzchnia śmigieł
+        v_i = np.sqrt(self.GRAVITY / (2 * rho * disk))    # ~4 m/s w zawisie
+        for i in range(self.NUM_DRONES):
+            dz = self.pos[i, 2] - self.pos[nth_drone, 2]
+            if i == nth_drone or dz <= 0:
+                continue
+            dxy = np.linalg.norm(self.pos[i, 0:2] - self.pos[nth_drone, 0:2])
+            r_jet = r0 + spread * dz
+            v = v_i * (r0 / r_jet) * np.exp(-0.5 * (dxy / (r_jet / 2)) ** 2)
+            force = min(0.5 * rho * cd_area * v ** 2, self.GRAVITY)
+            self._applyForceAtCom(nth_drone, [0, 0, -force])
+
+    def _physics(self, rpm, nth_drone):
+        """Fizyka z biblioteki plus (opcjonalnie) zakłócenia aerodynamiczne w tubie."""
+        super()._physics(rpm, nth_drone)
+        if self.TURBULENCE > 0:
+            self._turbulence(nth_drone)
+
+    def _turbulence(self, i):
+        """Model zastępczy turbulencji w tubie (PyBullet nie liczy przepływu powietrza).
+
+        1. Podmuchy: proces Ornsteina-Uhlenbecka (szum skorelowany w czasie, TURB_TAU),
+           odchylenie = TURBULENCE * ciężar * (0.25 poza tubą ... 1 w tubie)
+           * (1 ... 2, gdy drugi dron jest bliżej niż TURB_NEAR). Strumienie od ścianek
+           i od drugiego drona mieszają się najbardziej w tubie, przy minięciu.
+        2. Efekt ścianki: siła w stronę najbliższej ścianki, rośnie liniowo od 0 (luz WALL_RANGE)
+           do WALL_GAIN * TURBULENCE * ciężar (dron przy samej ściance).
+        Wielkości są założeniem (rząd kilku-kilkunastu % ciężaru), a nie wynikiem pomiaru.
+        """
+        dt = 1.0 / self.PYB_FREQ
+        u = self.progress(i)
+        outside = max(0.0, -u, u - self.TUBE_L)                       # odległość od tuby wzdłuż osi
+        in_tube = 0.25 + 0.75 * max(0.0, 1.0 - outside / 0.3)
+        d = np.linalg.norm(self.pos[0] - self.pos[1])
+        near = 1.0 + max(0.0, 1.0 - d / self.TURB_NEAR)
+        sigma = self.TURBULENCE * self.GRAVITY * in_tube * near
+        self._turb[i] += (-self._turb[i] / self.TURB_TAU * dt
+                          + sigma * np.sqrt(2 * dt / self.TURB_TAU) * self._rng.normal(size=3))
+        force = self._turb[i].copy()
+        #### Przyciąganie do ścianki (tylko w obszarze tuby)
+        yz = self.pos[i, 1:] - np.array([0.0, self.Z0])
+        r = np.linalg.norm(yz)
+        if 0.0 <= self.pos[i, 0] <= self.TUBE_L and r > 1e-6:
+            gap = self.TUBE_R - r - self.DRONE_R
+            pull = self.WALL_GAIN * self.TURBULENCE * self.GRAVITY * max(0.0, 1.0 - gap / self.WALL_RANGE)
+            force[1:] += pull * yz / r
+        self._applyForceAtCom(i, force)
+
+    def _applyForceAtCom(self, i, force_world):
+        """Siła w układzie świata przyłożona w środku masy (bez momentu obrotowego).
+
+        self.pos odświeża się raz na krok sterowania, a fizyka robi 8 kroków pomiędzy,
+        więc punkt przyłożenia bierzemy wprost z PyBullet: przy nieaktualnym punkcie siła
+        dawałaby moment i obracała drona.
+        """
+        _, quat = p.getBasePositionAndOrientation(self.DRONE_IDS[i], physicsClientId=self.CLIENT)
+        rot = np.array(p.getMatrixFromQuaternion(quat)).reshape(3, 3)
+        p.applyExternalForce(self.DRONE_IDS[i], 4, forceObj=(rot.T @ np.asarray(force_world)).tolist(),
+                             posObj=[0, 0, 0], flags=p.LINK_FRAME, physicsClientId=self.CLIENT)
 
     ################################################################################
     #### Akcje i obserwacje #########################################################

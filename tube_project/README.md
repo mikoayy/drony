@@ -16,6 +16,10 @@ a zderzenie liczy się poniżej 12 cm.
 
 ![krzywa uczenia](docs/learning_curve.png)
 
+> Przewodnik krok po kroku (jak działa środowisko, PID, nagroda, PPO, z ćwiczeniami): **[PRZEWODNIK.md](PRZEWODNIK.md)**
+>
+> Obszerny raport z projektu (środowisko, czujniki, sieci, przebieg uczenia, wyniki): **[RAPORT.md](RAPORT.md)**
+
 ---
 
 ## Wyniki
@@ -61,7 +65,7 @@ pip install -e . tensorboard
 
 ## Jak uruchomić
 
-Komendy uruchamiaj z katalogu głównego repozytorium. Pakiet jest zainstalowany w trybie `-e`,
+Komendy uruchamiaj z katalogu głównego repozytorium, czyli tam, gdzie leżą `pyproject.toml` i `.venv/` (po `git clone` to `drony/`, lokalnie `~/Documents/RISA_2/drony/gym-pybullet-drones/`), z aktywnym `.venv`. Pakiet jest zainstalowany w trybie `-e`,
 więc skrypty można też odpalać z innych miejsc.
 
 ### Podgląd wytrenowanego modelu (okno 3D)
@@ -100,6 +104,7 @@ python gym_pybullet_drones/examples/play_tube.py --radius 0.15 --episodes 5
 | `--downwash` | wył. | fizyka z downwashem (`Physics.PYB_DW`) |
 | `--sensing_range` | inf | zasięg, w jakim dron widzi drugiego [m] |
 | `--obs_noise` | 0 | szum pomiaru pozycji drugiego drona [m] |
+| `--turbulence [siła]` | 0 (wył.) | turbulencje w tubie, ułamek ciężaru drona; sama flaga = 0.02 |
 | `--lane_margin` | 0.03 | zapas od ścianki dla sterownika ręcznego [m] |
 
 ### Trening
@@ -138,7 +143,7 @@ Run 10 przeszedł całe curriculum w ok. 2 mln kroków.
 | `--curriculum_step` | 0.03 | o ile tuba zwęża się na każdym poziomie [m] |
 | `--no_curriculum` | wył. | trening od razu na docelowym zakresie |
 | `--init_model` | brak | model, od którego zaczyna się trening |
-| `--downwash`, `--sensing_range`, `--obs_noise` | | warianty trudniejsze (jak w `play_tube.py`) |
+| `--downwash`, `--turbulence`, `--sensing_range`, `--obs_noise` | | warianty trudniejsze (jak w `play_tube.py`) |
 | `--seed` | 0 | ziarno |
 
 ---
